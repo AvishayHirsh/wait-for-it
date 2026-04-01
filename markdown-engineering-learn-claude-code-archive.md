@@ -2,16 +2,37 @@
 
 > **Archived on:** 2026-04-01  
 > **Source URL:** https://www.markdown.engineering/learn-claude-code  
-> **Note:** The site returns HTTP 403 to automated fetchers. All content below was retrieved via search engine caches, indexed snippets, and companion GitHub repositories.
+> **Note:** The site returns HTTP 403 to automated fetchers, and the domain is blocked at the network proxy level (`host_not_allowed`). All content below was retrieved via search engine caches, indexed snippets, and companion GitHub repositories. No browser MCP tools were available in this environment.
 
 ---
 
-## Main Landing Page
+## Main Site — markdown.engineering
+
+**URL:** https://www.markdown.engineering/
+
+**Thesis (from search index):**
+> *"Code is becoming a generated artifact."*  
+> *"Markdown is becoming the source of truth."*  
+> *"The discipline of engineering the systems that write your software."*
+
+**Full stack covered:**
+- **Primitives** — Markdown, CLI, Bash, Git
+- **Models** — Claude, GPT, Gemini
+- **Tools** — Bash, Read, Edit, Write, Grep, Glob
+- **MCPs**
+- **Skills**
+- **Agents**
+
+---
+
+## Learn Claude Code Landing Page
 
 **URL:** https://www.markdown.engineering/learn-claude-code
 
 **Description (from search index):**  
-A way to learn markdown engineering through a terminal-based learning game, covering primitives, models, tools, MCPs, skills, and agents. The site offers a curriculum-style breakdown of how Claude Code works internally — a source-code deep dive series.
+A terminal-based learning game to learn markdown engineering, covering primitives, models, tools, MCPs, skills, and agents. The site offers a curriculum-style source-code deep dive into how Claude Code works internally.
+
+> "Claude Code is the ideal teaching subject because it demonstrates what happens when you trust the model and focus your engineering on the harness."
 
 ---
 
@@ -224,20 +245,29 @@ Source mirrors:
 
 ## What Could NOT Be Retrieved
 
-The following URLs returned HTTP 403 (Forbidden) to automated fetchers:
+**Network-level block:** The domain `markdown.engineering` is blocked at the proxy level with `x-deny-reason: host_not_allowed`. This means even `curl` with browser headers cannot reach the site from this environment — it is not a simple bot-detection issue.
+
+The following URLs all returned 403:
 - `https://markdown.engineering/learn-claude-code/`
 - `https://www.markdown.engineering/learn-claude-code`
 - `https://www.markdown.engineering/learn-claude-code/01-boot-sequence`
+- `https://www.markdown.engineering/` (homepage)
 
 The Wayback Machine (`web.archive.org`) was also inaccessible from this environment.
 
-Only Lesson 01 (`01-boot-sequence`) appeared in search engine indexes. No indexed content was found for lessons `02` onward from `markdown.engineering`. The site likely has more lessons but they are either not yet crawled or behind a login/paywall.
+**No browser MCP tools** (Playwright/Puppeteer) were available to bypass the restriction.
+
+Only Lesson 01 (`01-boot-sequence`) appeared in search engine indexes. No indexed content was found for lessons `02` onward. The site likely has more lessons but they are either not yet crawled or behind a login/paywall.
+
+**To fully archive this site**, someone would need to access it from an unrestricted network (regular browser) and save the pages manually or use a tool like `wget --mirror` or the Wayback Machine's Save Page Now feature.
 
 ---
 
 ## Sources
 
+- [Markdown Engineering — Homepage](https://www.markdown.engineering/)
 - [Claude Code Source Deep Dive — Markdown Engineering](https://www.markdown.engineering/learn-claude-code)
 - [mdENG — Lesson 01 — Claude Code Boot Sequence — Source Deep Dive](https://www.markdown.engineering/learn-claude-code/01-boot-sequence)
 - [GitHub — shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
 - [GitHub — Ringmast4r/674019130-learn-real-claude-code](https://github.com/Ringmast4r/674019130-learn-real-claude-code)
+- [GitHub — Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts)
